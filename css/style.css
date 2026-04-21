@@ -1,7 +1,8 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: sans-serif;
-  background: #f5f7fa; // ← 薄いグレー
+  background: #f5f7fa;
   color: #333;
 }
 
@@ -9,17 +10,15 @@ body {
 .header {
   text-align: center;
   padding: 60px 20px;
-
-  h1 {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
+}
+.header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
 /* セクション */
-
 .about {
-  padding: 60px 20px 40px; // 上を広めに
+  padding: 60px 20px 40px;
   background: #fff;
   border-bottom: 1px solid #eee;
 }
@@ -61,12 +60,11 @@ body {
   max-width: 1000px;
   margin: 0 auto 60px;
   padding: 0 20px;
-
-  h2 {
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    color: #555;
-  }
+}
+.works h2 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #555;
 }
 
 /* グリッド */
@@ -84,25 +82,25 @@ body {
   border-radius: 12px;
   overflow: hidden;
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* 画像 */
 .card__img {
   position: relative;
-
-  img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
+}
+.card__img img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* overlay */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -115,30 +113,26 @@ body {
 /* テキスト */
 .card__body {
   padding: 14px;
-
-  h3 {
-    margin: 0 0 6px;
-    font-size: 1rem;
-  }
-
-  .desc {
-    font-size: 0.85rem;
-    color: #777;
-  }
-
-  .tag {
-    font-size: 0.75rem;
-    margin-top: 6px;
-    color: #4a90e2; // ← アクセント
-  }
+}
+.card__body h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+.card__body .desc {
+  font-size: 0.85rem;
+  color: #777;
+}
+.card__body .tag {
+  font-size: 0.75rem;
+  margin-top: 6px;
+  color: #4a90e2;
 }
 
 /* hover */
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-
-  .overlay {
-    opacity: 1;
-  }
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+.card:hover .overlay {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

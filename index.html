@@ -2,30 +2,103 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="portfolio" content="width=device-width, initial-scale=1.0">
-    <title>STUDIO02'S PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
     <meta name="description" content="ポートフォリオのサイト">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>STUDIO02'S PORTFOLIO</h1>
-    </header>
 
-    <main>
-        <section>
-            <h2>制作物</h2>
-            <p>ウイスキー『宮』Webページ</p>
-            <a href="https://yoshida9029.github.io/miyawebpage/"><img src="img/miya_hp.png" alt="ウイスキーサイトのサムネイル"></a>
+<header class="header">
+    <h1>PORTFOLIO</h1>
+</header>
 
-            <p>勤怠入力</p>
-            <a href="https://yoshida9029.github.io/Attendance_check/"><img src="img/Attendance_check.png" alt="勤怠入力サイトのサムネイル"></a>
+<main class="main">
 
-            <p>タイピングゲーム</p>
-            <a href="https://yoshida9029.github.io/typing_app/"><img src="img/typing_app.png" alt="タイピングゲームのサムネイル"></a>
+    <section class="about">
+    <div class="about__inner">
+        <h2>自己紹介</h2>
+        <p class="name">吉田　僚二</p>
+        <p class="about__text">
+            HTML / CSS / JavaScriptを中心にWeb制作を学習中。<br>
+            UI/UXを意識したシンプルで使いやすいサイト制作を心がけています。<br>
+            趣味でUnityを使用しVR用の3Dアバターの見た目や動きを調整しています。
+        </p>
 
-            <p>弓工房『清響』LPサイト</p>
-            <a href="https://yoshida9029.github.io/yumikoubou_lp/"><img src="img/yumikoubou_lp.png" alt="弓工房のサムネイル"></a>
-        </section>
-    </main>
+        <a href="https://github.com/yoshida9029" target="_blank" class="github">
+            GitHubを見る 
+        </a>
+    </div>
+</section>
+
+    <!-- LP・HP -->
+    <section class="works">
+        <h2>LP・HP</h2>
+
+        <div class="grid">
+
+            <a href="https://yoshida9029.github.io/miyawebpage/" target="_blank" class="card">
+                <div class="card__img">
+                    <img src="img/miya_hp.png" alt="">
+                    <span class="overlay">View</span>
+                </div>
+                <div class="card__body">
+                    <h3>ウイスキー『宮』</h3>
+                    <p class="desc">Webページ制作</p>
+                    <p class="tag">HTML / CSS</p>
+                </div>
+            </a>
+
+            <a href="https://yoshida9029.github.io/yumikoubou_lp/" target="_blank" class="card">
+                <div class="card__img">
+                    <img src="img/yumikoubou_lp.png" alt="">
+                    <span class="overlay">View</span>
+                </div>
+                <div class="card__body">
+                    <h3>弓工房『清響』</h3>
+                    <p class="desc">LPサイト</p>
+                    <p class="tag">HTML / CSS / JS</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- アプリ -->
+    <section class="works">
+        <h2>アプリ</h2>
+
+        <div class="grid">
+
+            <a href="https://yoshida9029.github.io/Attendance_check/" target="_blank" class="card">
+                <div class="card__img">
+                    <img src="img/Attendance_check.png" alt="">
+                    <span class="overlay">View</span>
+                </div>
+                <div class="card__body">
+                    <h3>勤怠入力</h3>
+                    <p class="desc">勤怠管理アプリ</p>
+                    <p class="tag">JavaScript</p>
+                </div>
+            </a>
+
+            <a href="https://yoshida9029.github.io/typing_app/" target="_blank" class="card">
+                <div class="card__img">
+                    <img src="img/typing_app.png" alt="">
+                    <span class="overlay">View</span>
+                </div>
+                <div class="card__body">
+                    <h3>タイピングゲーム</h3>
+                    <p class="desc">ブラウザゲーム</p>
+                    <p class="tag">JavaScript</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
 </body>
 </html>
